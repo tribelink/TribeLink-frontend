@@ -35,20 +35,20 @@ Follow these steps to install and run the project locally.
 ### Clone the Repository
 
 
-git clone https://github.com/pandasuvm/TribeLink-frontend.git
-cd TribeLink-frontend
+```git clone https://github.com/pandasuvm/TribeLink-frontend.git
+cd TribeLink-frontend```
 Install Dependencies
 
 
-npm install
+```npm install```
 or if using yarn:
 
-yarn install
+```yarn install```
 Link Native Dependencies (for React Native CLI only)
 If you're using the React Native CLI, link native modules by running:
 
 
-npx react-native link
+```npx react-native link```
 Set up Android/iOS Environment
 For Android:
 Ensure that Android Studio is installed, and Android SDK paths are set in your environment variables.
@@ -58,28 +58,29 @@ Run an emulator or connect an Android device.
 Start the Metro bundler:
 
 
-npx react-native start
+```npx react-native start```
 In another terminal window, run:
 
 
-npx react-native run-android
+```npx react-native run-android```
 For iOS:
 Make sure Xcode is installed on your Mac.
 
 Install required iOS dependencies:
 
-
+```
 cd ios
 pod install
-cd ..
+cd ..```
 Start the Metro bundler:
 
-
+```
 npx react-native start
+```
 Build and run the app:
 
-
-npx react-native run-ios
+```
+npx react-native run-ios```
 For physical iOS device testing, you'll need to have the proper signing certificates and provisioning profiles set up in Xcode.
 
 Using Expo (Optional)
@@ -88,15 +89,15 @@ If you prefer using Expo for easier development:
 Install Expo CLI globally:
 
 
-npm install -g expo-cli
+```npm install -g expo-cli```
 Initialize the project with Expo:
 
 
-expo init service-booking-app
+```expo init TribeLink-frontend```
 Start the development server:
 
 
-expo start
+```expo start```
 You can scan the QR code with the Expo Go app on your device to run the app instantly.
 
 Building the App
@@ -104,7 +105,7 @@ Build for Android
 In your terminal, run:
 
 
-npx react-native run-android
+```npx react-native run-android
 For generating a signed APK for production, follow these steps:
 
 Generate a signing key using keytool.
